@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    .tooltip { /* Container for our tooltip */
+    position: relative;   
+    display: inline-block;
+}
+
+    .tooltip .tooltiptext { /* This is for the tooltip text */
+    visibility: hidden;
+    width: 200px;
+    background-color: #3fdf67;
+    color:black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;  /* This defines tooltip text position */
+    position: absolute;
+    z-index: 1;
+} 
+
+   .tooltip:hover .tooltiptext { /* Makes tooltip text visible when text is hovered on */
+    visibility: visible;
+}
+    
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="tooltip">Tooltip คือ กล่องข้อความสำหรับอธิบายรายละเอียดของข้อความที่มีขนาดสั้นหรือคลุมเครือยากต่อความเข้าใจเป็นการซ้อนไว้ต้องนำเมาส์ไปชี้ถึงแสดง
+ข้อความได้ <span class="tooltiptext">ทำได้แล้ว</span>
+    </div> 
+    
+</body>
+</html>
