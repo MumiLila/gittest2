@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>1. เขียนโปรแกรมถามชื่อ-สกุล และตอบกลับ</h1><br><br>
+  <form id= show >
+    ชื่อ : <input type="text" name="fname"><br><br>
+    นามสกุล : <input type="text" name="lname"><br><br>
+    ชื่อเล่น : <input type="text" name="nikename"><br><br>
+    <button onclick="Hi()">Click</button><br><br>
+  </form>
+
+  <script>
+  function Hi(){
+    var fname = document.getElementById("show").elements[0].value;
+    var lname = document.getElementById("show").elements[1].value;
+    var nickname = document.getElementById("show").elements[2].value;
+     document.write("สวัสดี"+ fname + lname + nickname)
+  }
+  </script>
+  <br>
+  <h2>2. เขียนโปรแกรมแสดงวันเวลาปัจจุบัน</h2>
+  <p id="date"></p>
+
+  <script>
+    var d = new Date();
+     document.getElementById("date").innerHTML = d;
+  </script>
+  <br>
+  <h3>3. เขียนโปรแกรมคูณตัวเลข 2 จำนวน</h3>
+  <form id= show2 >
+    1st Number : <input type="text" name="mumi1"><br><br>
+    2nd Number : <input type="text" name="mumi2"><br><br>
+    <br>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    <br>
+  </form>
+  <br>
+   <script>
+    function multiply(){
+      let x = document.getElementById("show2").elements[0].value;
+      let y = document.getElementById("show2").elements[1].value;
+      document.write (x*y);
+    }
+    function divide(){
+      let x = document.getElementById("show2").elements[0].value;
+      let y = document.getElementById("show2").elements[1].value;
+      document.write (x/y);
+    }
+  </script>
+
+</body>
+</html>

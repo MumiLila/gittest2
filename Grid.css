@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    /*background-color: green;*/
+}
+
+.section_area_grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.section_grid_item {
+    text-align: center;
+}
+
+.section_item_img_img{
+    width: 100%;
+}

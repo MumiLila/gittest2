@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    padding: 80px;
+    text-align: left;
+    background: #1abc9c;
+    color:red;
+  }
+  
+  /* Increase the font size of the h1 element */
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  ul {
+      list-style: none;
+  }
+  
+  /* Column container */
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Sidebar */
+  .side {
+    flex: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {   
+    flex: 80%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+  }
+
+  .section_area_grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+  }
+
+  .section_grid_item {
+    text-align: center;
+  }
+
+  .section_item_img_img{
+    width: 100%;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 40px;
+    text-align: center;
+    background: #ddd;
+  }
